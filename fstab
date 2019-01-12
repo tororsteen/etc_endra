@@ -1,0 +1,16 @@
+# Static information about the filesystems.
+# See fstab(5) for details.
+
+# <file system> <dir> <type> <options> <dump> <pass>
+# /dev/sda2 UUID=35a7af2f-0f79-4ca7-9ddd-3f8726d5eafe
+LABEL=archlinux     	/         	ext4      	rw,noatime,discard,data=ordered	0 1
+
+# /dev/sda1 UUID=3B99-4D29
+LABEL=EFI           	/boot     	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=iso8859-1,shortname=mixed,utf8,errors=remount-ro	0 2
+
+# /dev/sda4 UUID=7b38ea75-499b-465b-9d57-3015e219fd8f
+LABEL=home          	/home     	ext4      	rw,noatime,discard,data=ordered	0 2
+
+# /dev/sda3 UUID=a87ff165-6c63-41ba-88f0-a86f8dce2781
+LABEL=swap          	none      	swap      	defaults,pri=-2	0 0
+
