@@ -54,3 +54,5 @@ locate:x:21:
 tor:x:43:
 usbmux:x:140:
 systemd-timesync:x:985:
+geoclue:x:975:
+mysql:x:974:
