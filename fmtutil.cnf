@@ -77,5 +77,16 @@ utf8mex pdftex mexconf.tex -enc *utf8mex.ini
 xelatex xetex language.dat -etex xelatex.ini
 xetex xetex language.def -etex xetex.ini
 
+# var/lib/texmf/arch/installedpkgs/texlive-formatsextra.fmts
+eplain pdftex language.dat -translate-file=cp227.tcx *eplain.ini
+jadetex pdftex language.dat *jadetex.ini
+lollipop tex - lollipop.ini
+mllatex pdftex language.dat -translate-file=cp227.tcx -mltex *mllatex.ini
+mltex pdftex - -translate-file=cp227.tcx -mltex mltex.ini
+pdfjadetex pdftex language.dat *pdfjadetex.ini
+pdfxmltex pdftex language.dat *pdfxmltex.ini
+texsis pdftex - -translate-file=cp227.tcx texsis.ini
+xmltex pdftex language.dat *xmltex.ini
+
 # var/lib/texmf/arch/installedpkgs/texlive-science.fmts
 amstex pdftex - -translate-file=cp227.tcx *amstex.ini

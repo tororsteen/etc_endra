@@ -1,10 +1,26 @@
 # /etc/profile
 
-#Set our umask
+# Set our umask
 umask 022
 
-# Set our default path
-PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/home/tor/bin"
+# Append "$1" to $PATH when not already in.
+# This function API is accessible to scripts in /etc/profile.d
+append_path () {
+    case ":$PATH:" in
+        *:"$1":*)
+            ;;
+        *)
+            PATH="${PATH:+$PATH:}$1"
+    esac
+}
+
+# Append our default paths
+append_path '/usr/local/sbin'
+append_path '/usr/local/bin'
+append_path '/usr/bin'
+append_path '/home/tor/bin'
+
+# Force PATH to be environment
 export PATH
 
 # Load profiles from /etc/profile.d
@@ -15,8 +31,16 @@ if test -d /etc/profile.d/; then
 	unset profile
 fi
 
-# Source global bash config
-if test "$PS1" && test "$BASH" && test -z ${POSIXLY_CORRECT+x} && test -r /etc/bash.bashrc; then
+# Unload our profile API functions
+unset -f append_path
+
+# Source global bash config, when interactive but not posix or sh mode
+if test "$BASH" &&\
+   test "$PS1" &&\
+   test -z "$POSIXLY_CORRECT" &&\
+   test "${0#-}" != sh &&\
+   test -r /etc/bash.bashrc
+then
 	. /etc/bash.bashrc
 fi
 

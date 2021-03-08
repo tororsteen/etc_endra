@@ -1,6 +1,6 @@
 # Static table lookup for hostnames.
 # See hosts(5) for details.
-127.0.0.1	localhost.localdomain localhost
-::1			localhost.localdomain localhost
-127.0.1.1	TorHP.localdomain	TorHP
-192.168.10.100	Bedehusgata
+
+127.0.0.1	localhost
+::1		localhost
+127.0.1.1	tor-HP.localdomaine tor-HP
