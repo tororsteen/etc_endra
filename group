@@ -26,7 +26,7 @@ optical:x:990:
 render:x:989:
 storage:x:988:
 uucp:x:987:
-video:x:986:
+video:x:986:tor
 users:x:985:
 systemd-journal:x:984:
 rfkill:x:983:
@@ -53,3 +53,5 @@ rpc:x:32:
 rtkit:x:133:
 locate:x:21:
 cups:x:209:
+sgx:x:971:
+systemd-oom:x:970:
