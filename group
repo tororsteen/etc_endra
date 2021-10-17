@@ -56,3 +56,6 @@ cups:x:209:
 sgx:x:971:
 systemd-oom:x:970:
 usbmux:x:140:
+nm-openconnect:x:969:
+nm-openvpn:x:968:
+openvpn:x:967:
