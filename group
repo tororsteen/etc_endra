@@ -59,3 +59,4 @@ usbmux:x:140:
 nm-openconnect:x:969:
 nm-openvpn:x:968:
 openvpn:x:967:
+tss:x:966:
