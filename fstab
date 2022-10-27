@@ -2,15 +2,12 @@
 # See fstab(5) for details.
 
 # <file system> <dir> <type> <options> <dump> <pass>
-# /dev/sda2 UUID=a104ded1-51ed-4ccd-8264-0fcbb12dc860
-/dev/sda2           	/         	ext4      	rw,noatime,discard,data=ordered	0 1
+# /dev/nvme0n1p2   LABEL = ROOT
+UUID=fadaaff4-6d50-4752-b9a9-8ff7712f6ef6	/         	ext4      	rw,noatime	0 1
 
-# /dev/sda1 UUID=3B99-4D29
-LABEL=EFI           	/boot     	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro	0 2
+# /dev/nvme0n1p1   LABEL = EFI
+UUID=4931-9336      	/boot     	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro	0 2
 
-# /dev/sda4 UUID=7b38ea75-499b-465b-9d57-3015e219fd8f
-LABEL=home          	/home     	ext4      	rw,noatime,discard,data=ordered	0 2
-
-# /dev/sda3 UUID=a87ff165-6c63-41ba-88f0-a86f8dce2781
-LABEL=swap          	none      	swap      	defaults  	0 0
+# /dev/nvme0n1p3	LABEL = HOME
+UUID=a60507fc-3f9b-4c91-96de-0e6967812ce9	/home     	ext4      	rw,noatime	0 2
 

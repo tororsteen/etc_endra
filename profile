@@ -19,7 +19,6 @@ append_path '/usr/local/sbin'
 append_path '/usr/local/bin'
 append_path '/usr/bin'
 append_path '/home/tor/bin'
-
 # Force PATH to be environment
 export PATH
 

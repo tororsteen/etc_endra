@@ -4,3 +4,7 @@
 # Syntax: simple "KEY=VAL" pairs on separate lines
 #
 CUPS_SERVER=192.168.10.100:631
+#XDG_CONFIG_HOME="$HOME/.config"
+#XDG_CACHE_HOME=$HOME/.cache
+#XDG_DATA_HOME=$HOME/.local/share
+#XDG_STATE_HOME=$HOME/.local/state
