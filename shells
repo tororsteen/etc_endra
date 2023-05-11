@@ -6,3 +6,5 @@
 /bin/zsh
 /usr/bin/zsh
 /usr/bin/git-shell
+/bin/rbash
+/usr/bin/rbash

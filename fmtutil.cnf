@@ -41,12 +41,6 @@
 #    AddFormat directives in (ultimately) the *.tlpsrc files. Don't edit here.
 
 # var/lib/texmf/arch/installedpkgs/texlive-core.fmts
-cont-en pdftex cont-usr.tex -8bit *cont-en.mkii
-cont-en xetex cont-usr.tex -8bit *cont-en.mkii
-#! cont-fr pdftex cont-usr.tex -8bit *cont-fr.mkii
-#! cont-it pdftex cont-usr.tex -8bit *cont-it.mkii
-#! cont-nl pdftex cont-usr.tex -8bit *cont-nl.mkii
-#! cont-ro pdftex cont-usr.tex -8bit *cont-ro.mkii
 cslatex pdftex - -etex cslatex.ini
 csplain pdftex - -etex -enc csplain-utf8.ini
 dvilualatex luatex language.dat,language.dat.lua dvilualatex.ini
