@@ -58,3 +58,7 @@ locate:x:21:
 rpcuser:x:34:
 usbmux:x:140:
 saned:x:968:
+systemd-journal-upload:x:967:
+fwupd:x:966:
+groups:x:965:
+passim:x:964:
