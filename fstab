@@ -2,12 +2,15 @@
 # See fstab(5) for details.
 
 # <file system> <dir> <type> <options> <dump> <pass>
-# /dev/nvme0n1p2   LABEL = ROOT
-UUID=fadaaff4-6d50-4752-b9a9-8ff7712f6ef6	/         	ext4      	rw,noatime	0 1
+# /dev/nvme0n1p2
+UUID=d81df201-ffad-40af-9048-4ec2af92620e	/         	btrfs     	rw,relatime,compress=zstd:3,ssd,discard=async,space_cache=v2,subvol=/@	0 0
 
-# /dev/nvme0n1p1   LABEL = EFI
-UUID=4931-9336      	/boot     	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro	0 2
+# /dev/nvme0n1p2
+UUID=d81df201-ffad-40af-9048-4ec2af92620e	/home     	btrfs     	rw,relatime,compress=zstd:3,ssd,discard=async,space_cache=v2,subvol=/@home	0 0
 
-# /dev/nvme0n1p3	LABEL = HOME
-UUID=a60507fc-3f9b-4c91-96de-0e6967812ce9	/home     	ext4      	rw,noatime	0 2
+# /dev/nvme0n1p1
+UUID=12EE-E74A      	/efi      	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro	0 2
+
+/home/tor/@swap/swapfile none swap defaults 0 0
+
 
