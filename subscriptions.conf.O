@@ -1,0 +1,11 @@
+# Subscription configuration file for CUPS v2.4.16
+# Written by cupsd
+NextSubscriptionId 12
+<Subscription 11>
+Events printer-state-changed printer-restarted printer-shutdown printer-stopped printer-added printer-deleted printer-modified
+Owner tor
+LeaseDuration 86400
+Interval 0
+ExpirationTime 1765823293
+NextEventId 1
+</Subscription>
