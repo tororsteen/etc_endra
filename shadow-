@@ -25,3 +25,4 @@ rtkit:!*:20364::::::
 pcscd:!*:20380:::::1:
 lightdm:!*:20447::::::
 tor:$y$j9T$TO90xMoQAldEFYU2Ic6eD.$8srVsPakJ.nyDKXG3empUrLKUKe0hsO5x3II7FkNyu3:20448:0:99999:7:::
+systemd-imds:!*:20636:::::1:

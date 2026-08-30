@@ -61,3 +61,5 @@ empower:!*::
 lightdm:!*::
 test:!::
 tor:!::
+systemd-imds:!*::
+sddm:!*::

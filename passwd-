@@ -25,3 +25,4 @@ rtkit:x:133:133:RealtimeKit:/proc:/usr/bin/nologin
 pcscd:x:967:967:PC/SC Smart Card Daemon:/:/usr/bin/nologin
 lightdm:x:965:965:Light Display Manager:/var/lib/lightdm:/usr/bin/nologin
 tor:x:1000:1000::/home/tor:/bin/zsh
+systemd-imds:x:964:964:systemd Instance Metadata:/:/usr/bin/nologin

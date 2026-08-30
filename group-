@@ -61,3 +61,5 @@ empower:x:966:
 lightdm:x:965:
 test:x:1001:
 tor:x:1000:
+systemd-imds:x:964:
+sddm:x:963:
